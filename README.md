@@ -2,6 +2,7 @@
 
 ![image](https://github.com/kamalov-eldar/movitop/blob/master/docs/img/Demo.gif)
 
+https://kamalov-eldar.github.io/movitop/
 ## Project setup
 
 ```
@@ -13,4 +14,4 @@ npm install
 ```
 npm run serve
 ```
-https://kamalov-eldar.github.io/movitop/
+
