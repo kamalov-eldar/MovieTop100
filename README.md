@@ -13,7 +13,3 @@ npm install
 ```
 npm run serve
 ```
-
-Описание:
-https://github.com/kamalov-eldar/movitop/blob/master/docs/img/Demo.gif
-URL-адрес ссылки - это URL-адрес ссылки, отображаемый в github после загрузки изображения в формате gif.
