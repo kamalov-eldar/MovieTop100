@@ -1,4 +1,4 @@
-# moviesearch
+# Movie Top100
 
 ## Project setup
 
