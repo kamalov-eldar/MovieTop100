@@ -5,7 +5,7 @@
     </div>
     <b-modal id="my-modal" ref="my-modal" hide-footer hide-header>
       <img :src="movie.posterUrlPreview" alt="" class="modal-poster-img" />
-      <button type="button" aria-label="Close" class="close" @click="hideModal">×</button>
+      <button type="button" aria-label="Close" class="close" @click="hidePoster">×</button>
     </b-modal>
     <b-modal v-if="foundMovie !== undefined" v-model="isShowModal" size="xl" hide-footer>
       <template #modal-title>
@@ -98,7 +98,7 @@ export default {
     showPoster() {
       this.$refs["my-modal"].show();
     },
-    hideModal() {
+    hidePoster() {
       this.$refs["my-modal"].hide();
     },
   },

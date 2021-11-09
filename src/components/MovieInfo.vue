@@ -17,7 +17,7 @@
       <div class="rating-container">
         <span class="rating-kinopoisk">
           <a href="https://www.imdb.com/?ref_=nv_home" target="_blank">
-            <img class="rating-imdb-pic" src="img/imdb.jpg" alt="" />
+            <img class="rating-imdb-pic" src="img/imdb.png" alt="" />
           </a>
           <span class="rating-number" title="Рейтинг IMDB"> {{ foundMovie.ratingImdb }} </span>
           <span class="rating-count" title="Количество голосов"> {{ foundMovie.ratingImdbVoteCount }}</span>
