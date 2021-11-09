@@ -5,7 +5,7 @@
 https://kamalov-eldar.github.io/movitop/
 ## Project setup
 
-![image](https://github.com/kamalov-eldar/movitop/blob/master/docs/img/imdb.jpg)
+
 ```
 npm install
 ```
