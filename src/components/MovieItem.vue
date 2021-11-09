@@ -1,19 +1,18 @@
 <template>
   <b-card>
     <div class="poster">
-      <img :src="movie.posterUrlPreview" alt="" class="poster-img" @click="modalPoster = !modalPoster" />
+      <img :src="movie.posterUrlPreview" alt="" class="poster-img" @click="showPoster" />
     </div>
+    <b-modal id="my-modal" ref="my-modal" hide-footer hide-header>
+      <img :src="movie.posterUrlPreview" alt="" class="modal-poster-img" />
+      <button type="button" aria-label="Close" class="close" @click="hideModal">×</button>
+    </b-modal>
     <b-modal v-if="foundMovie !== undefined" v-model="isShowModal" size="xl" hide-footer>
       <template #modal-title>
         <h5 class="modal-title">{{ foundMovie.nameRu }}</h5>
       </template>
       <MovieInfo :found-movie="foundMovie"></MovieInfo>
     </b-modal>
-
-    <b-modal v-model="modalPoster" hide-footer hide-header>
-      <img :src="movie.posterUrlPreview" alt="" class="poster-big" />
-    </b-modal>
-
     <div class="movie">
       <div class="movie-head">
         <h2 class="movie-title">{{ movie.nameRu }}</h2>
@@ -95,6 +94,12 @@ export default {
         this.foundMovie = data;
       }
       this.isShowModal = true;
+    },
+    showPoster() {
+      this.$refs["my-modal"].show();
+    },
+    hideModal() {
+      this.$refs["my-modal"].hide();
     },
   },
 };

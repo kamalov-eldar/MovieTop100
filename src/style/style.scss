@@ -95,6 +95,15 @@
   background-size: cover;
   width: 110px;
   height: 140px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 6px;
+  right: 13px;
+  z-index: 1;
+  font-size: 2.5rem;
 }
 
 .poster-img {
@@ -108,14 +117,10 @@
     transform: scale(1.2); /* Увеличиваем масштаб */
   }
 }
-
-.poster-big {
-  display: block;
+.modal-poster-img {
   width: 100%;
   height: 100%;
-  &:hover {
-    transform: none; /* Увеличиваем масштаб */
-  }
+  object-fit: cover;
 }
 
 .modal-dialog {
@@ -134,7 +139,6 @@
     flex-direction: column;
   }
 }
-
 .modal-movie {
   display: flex;
   align-items: flex-start;
