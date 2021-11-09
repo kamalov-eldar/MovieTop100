@@ -13,3 +13,4 @@ npm install
 ```
 npm run serve
 ```
+https://kamalov-eldar.github.io/movitop/
