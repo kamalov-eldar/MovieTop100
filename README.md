@@ -2,7 +2,7 @@
 
 ![image](https://github.com/kamalov-eldar/movitop/blob/master/docs/img/Demo.gif)
 
-https://kamalov-eldar.github.io/MovieTop100/
+готовый сайт -> https://kamalov-eldar.github.io/MovieTop100/
 ## Project setup
 
 
